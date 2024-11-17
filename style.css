@@ -44,13 +44,13 @@
   }
   
 /*grid layout*/
-  header {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-gap: 20px;
+
+header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #839175;
   }
   
   header .logo {
@@ -58,13 +58,17 @@
   }
   
   nav {
-    display: grid;
-    justify-self: end;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
   }
   
   .nav-links {
     display: flex;
     list-style: none;
+    margin: 0;
   }
   
   .nav-links li {
@@ -83,6 +87,48 @@
   }
   
 
+  .hamburger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+ 
+    .nav-links {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      background-color: #839175;
+      position: absolute;
+      top: 80px; 
+      left: 0;
+      padding: 20px 0;
+    }
+  
+    .nav-links li {
+      margin-left: 0;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  
+    .nav-links li a {
+      font-size: 1.25rem;
+    }
+  
+
+    .hamburger-menu {
+      display: block;
+    }
+  
+  
+    .nav-links.active {
+      display: flex;
+    }
+  }
+
+
   section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -93,6 +139,7 @@
   section img {
     max-width: 100%;
     border-radius: 8px;
+   
   }
   
   h2, h3 {
@@ -110,4 +157,8 @@
   
   .section-two {
     background-color: #fff;
+  }
+
+  .footer-logo{
+    max-width: 150px;
   }
