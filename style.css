@@ -155,11 +155,43 @@ header {
   
   .section-one {
     background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
   }
-  
+
+
+  .section-one h2{
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .section-one p{
+    text-align: center;
+  }
+
   .section-two {
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
   }
+
+
+  .section-two h2{
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .section-two p{
+    text-align: center;
+  }
+
+
 /*footer*/
 
 .footer {
