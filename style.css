@@ -144,9 +144,7 @@ header {
    
   }
   
-  h2, h3 {
-    color: #333;
-  }
+  
   
   section p {
     font-size: 1rem;
@@ -161,6 +159,8 @@ header {
     gap: 20px;
     padding: 40px;
   }
+
+  
 
 
   .section-one h2{
@@ -181,6 +181,11 @@ header {
     padding: 40px;
   }
 
+  .section-two img{
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+  }
 
   .section-two h2{
     margin-top: 20px;
