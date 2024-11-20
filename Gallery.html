@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Woodland Gardens</title>
     <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   </head>
 
 <body>
@@ -71,31 +77,67 @@
   </section>
 
   <div class="main-container">
-  <div class="info-box">
-    <div class="section">
-      <h3>Admission</h3>
-      <ul>
-        <li><strong>Adults</strong>: $8.00</li>
-        <li><strong>5-12 years old</strong>: $3.00</li>
-        <li><strong>Under 5 years old</strong>: Free</li>
-      </ul>
-    </div>
-    <div class="section">
+    <div class="info-box">
+      <h3>Admission Information</h3>
+      <table class="info-table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Adults</strong></td>
+            <td>$8.00</td>
+          </tr>
+          <tr>
+            <td><strong>5-12 years old</strong></td>
+            <td>$3.00</td>
+          </tr>
+          <tr>
+            <td><strong>Under 5 years old</strong></td>
+            <td>Free</td>
+          </tr>
+        </tbody>
+      </table>
+  
       <h3>Hours</h3>
-      <p>9 a.m. to dusk (daily)</p>
-      <p>After hours arrangements are available.</p>
-    </div>
-    <div class="section">
+      <table class="info-table">
+        <thead>
+          <tr>
+            <th>Operating Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>9 a.m. to dusk (daily)</td>
+          </tr>
+          <tr>
+            <td>After hours arrangements are available.</td>
+          </tr>
+        </tbody>
+      </table>
+  
       <h3>Dogs</h3>
-      <p>Dogs on leash are welcome in the gardens.</p>
+      <table class="info-table">
+        <thead>
+          <tr>
+            <th>Policy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dogs on leash are welcome in the gardens.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <div class="image3-container">
+      <img src="images/admission.png" alt="admission">
     </div>
   </div>
-
-  <div class="image3-container">
-    <img  src="images/admission.png"  alt="admission">
-  </div>
-  </div>
-
 
   <div class="footer">
     <div class="footer-content">
@@ -106,7 +148,7 @@
         </div>
     </div> 
         <div class="divider"></div>
-        <div class="footer-section" id="Contact">
+        <div class="footer-section" >
             <h3>Contact</h3>
             <ul>
                 <li>Woodlandgardens@hotmail.com</li>
