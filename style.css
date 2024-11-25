@@ -290,57 +290,70 @@ margin-bottom: 1.3rem;
 
 @media (max-width: 768px) {
   .section-one {
-    padding: 2rem 1rem; 
-    gap: 1rem; 
+    padding: 2rem 1rem;
+    gap: 1rem;
   }
 
   .section-one h2 {
-    font-size: 1.6rem; 
+    font-size: 1.6rem;
   }
 
   .section-one p {
-    font-size: 1rem; 
-    text-align: center; 
+    font-size: 1rem;
+    text-align: center;
   }
 
-
   .section-two {
-    padding: 2rem 1rem; 
-    gap: 1rem; 
+    padding: 2rem 1rem;
+    gap: 1rem;
   }
 
   .section-two h2 {
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
   }
 
   .section-two p {
-    font-size: 1rem; 
-    text-align: center; 
+    font-size: 1rem;
+    text-align: center;
   }
 
   .section-two img {
-    width: 80%; 
-    max-width: 400px; 
+    width: 80%;
+    max-width: 400px;
     height: auto;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
   }
 
-
+  
   .section-three {
-    padding: 3rem 1rem; 
+    padding: 2rem 1rem; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 1rem; 
   }
 
   .section-three h2 {
-    font-size: 1.8rem; 
-    margin-bottom: 1.3rem; 
+    font-size: 1.8rem;
+    margin-bottom: 1rem; 
+    text-align: center; 
   }
 
   .section-three p {
-    font-size: 1rem; 
-    text-align: center; 
+    font-size: 1rem;
+    text-align: center;
+    width: 100%; 
+    max-width: 600px; 
+    margin: 0 auto; 
+  }
+
+  .section-three img {
+    width: 100%; 
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 1rem;
   }
 }
-  
 
 /*gallery*/
 
