@@ -115,28 +115,35 @@ header {
     color: #4CAF50;
   }
   
-
   .hamburger-menu {
     display: none;
-    font-size: 1.8rem;
+    font-size: 2rem; 
     cursor: pointer;
     color: white;
+    padding: 10px;
+    transition: transform 0.3s ease;
   }
-
   
+  .hamburger-menu:hover {
+    transform: scale(1.1); 
+  }
+  
+
   @media (max-width: 768px) {
+  
 
     .nav-links {
       display: none;
-      width: 100%;
+      width: 100vw; 
       flex-direction: column;
-      background-color: #9fc292;
+      background-color: #9fc292; 
       position: absolute;
       top: 5rem; 
       left: 0;
       padding: 20px 0;
       text-align: center;
       z-index: 10;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); 
     }
   
     .nav-links li {
@@ -168,9 +175,10 @@ header {
   
 
   .nav-links li a:hover {
-    background-color: #4CAF50;
+    background-color: #4CAF50; 
     color: white;
   }
+  
 
   section {
     display: grid;
