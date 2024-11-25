@@ -701,6 +701,7 @@ iframe{
   text-align: center;
   justify-items: center;
   display: flex;
+  font-size: 2rem;
 }
 
     .event-sections-container {
