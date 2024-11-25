@@ -694,6 +694,13 @@ iframe{
 
 
     /*events page*/
+
+.events-header h2{
+  font-family: "roboto",sans-serif;
+  color: #555;
+  text-align: center;
+}
+
     .event-sections-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
