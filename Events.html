@@ -35,6 +35,15 @@
       </nav>
     </header>
 
+    <script>
+      const hamburgerIcon = document.getElementById('hamburger-icon');
+      const navLinks = document.getElementById('nav-links');
+    
+      hamburgerIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    </script>
+
     <div class="event-sections-container">
     <section class="section-events1">
         <img src="images/events1.png" alt="events image" class="events1-image">

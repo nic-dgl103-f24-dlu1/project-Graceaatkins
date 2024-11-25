@@ -33,6 +33,14 @@
     </nav>
   </header>
     
+  <script>
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const navLinks = document.getElementById('nav-links');
+  
+    hamburgerIcon.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 
     <div class="hero-image">
       <div class="hero-content">

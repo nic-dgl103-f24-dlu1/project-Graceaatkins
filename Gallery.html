@@ -33,6 +33,17 @@
       </nav>
     </header>
 
+    <script>
+      const hamburgerIcon = document.getElementById('hamburger-icon');
+      const navLinks = document.getElementById('nav-links');
+    
+      hamburgerIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    </script>
+
+
+
   <section class="Gallery">
     <div class="text-container">
     <h2>Kitty Coleman Woodland Garden Gallery</h2>
@@ -88,15 +99,15 @@
         </thead>
         <tbody>
           <tr>
-            <td><strong>Adults</strong></td>
+            <td>Adults</td>
             <td>$8.00</td>
           </tr>
           <tr>
-            <td><strong>5-12 years old</strong></td>
+            <td>5-12 years old</td>
             <td>$3.00</td>
           </tr>
           <tr>
-            <td><strong>Under 5 years old</strong></td>
+            <td>Under 5 years old</td>
             <td>Free</td>
           </tr>
         </tbody>
