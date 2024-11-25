@@ -123,8 +123,9 @@ header {
     color: white;
   }
 
+  
   @media (max-width: 768px) {
- 
+
     .nav-links {
       display: none;
       width: 100%;
@@ -134,16 +135,19 @@ header {
       top: 5rem; 
       left: 0;
       padding: 20px 0;
+      text-align: center;
+      z-index: 10;
     }
   
     .nav-links li {
-      margin-left: 0;
-      margin-bottom: 0.6rem;
-      text-align: center;
+      margin: 0.8rem 0;
     }
   
     .nav-links li a {
       font-size: 1.25rem;
+      color: white;
+      padding: 0.8rem 1.5rem; 
+      display: block;
     }
   
 
@@ -151,12 +155,22 @@ header {
       display: block;
     }
   
-  
+
     .nav-links.active {
       display: flex;
     }
   }
+  
 
+  .hamburger-menu.active {
+    transform: rotate(90deg); 
+  }
+  
+
+  .nav-links li a:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
 
   section {
     display: grid;
