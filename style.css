@@ -117,68 +117,74 @@ header {
   
   .hamburger-menu {
     display: none;
-    font-size: 2rem; 
     cursor: pointer;
-    color: white;
-    padding: 10px;
-    transition: transform 0.3s ease;
+    color:#fff;
   }
-  
-  .hamburger-menu:hover {
-    transform: scale(1.1); 
-  }
-  
+  @media screen and (max-width: 767px) {
 
-  @media (max-width: 768px) {
-  
-
-    .nav-links {
-      display: none;
-      width: 100vw; 
+    header {
       flex-direction: column;
-      background-color: #9fc292; 
-      position: absolute;
-      top: 5rem; 
-      left: 0;
-      padding: 20px 0;
-      text-align: center;
-      z-index: 10;
-      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); 
-    }
-  
-    .nav-links li {
-      margin: 0.8rem 0;
-    }
-  
-    .nav-links li a {
-      font-size: 1.25rem;
-      color: white;
-      padding: 0.8rem 1.5rem; 
-      display: block;
+      align-items: flex-start;
+      padding: 1rem 2rem;
     }
   
 
     .hamburger-menu {
       display: block;
+      cursor: pointer;
+      font-size: 2rem;
+      color: white;
+      margin-top: 1rem;
     }
   
 
-    .nav-links.active {
-      display: flex;
+    nav {
+      width: 100%;
+      display: none; 
+      position: absolute;
+      top: 80px;  
+      left: 0;
+      background-color: #9fc292;
+      padding: 1rem 0;
+    }
+  
+
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      padding-left: 0;
+      margin-top: 0;
+    }
+  
+    .nav-links li {
+      width: 100%;
+      text-align: center;
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  
+    .nav-links li a {
+      padding: 1rem 0;
+      font-size: 1.3rem;
+      color: #fff; 
+      background-color: #9fc292;
+      display: block;
+      width: 100%;
+    }
+  
+    .nav-links li a:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+  
+    
+nav.active {
+      display: block; 
     }
   }
-  
 
-  .hamburger-menu.active {
-    transform: rotate(90deg); 
-  }
-  
-
-  .nav-links li a:hover {
-    background-color: #4CAF50; 
-    color: white;
-  }
-  
+ 
+ 
 
   section {
     display: grid;
