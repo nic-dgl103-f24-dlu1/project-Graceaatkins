@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Woodland Gardens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+
+  <body>
+
+      <header> 
+        <img src="images/logo.png" alt="logo" class="logo">
+  
+  
+        <div class="hamburger-menu" id="hamburger-icon">
+          &#9776; 
+        </div>
+  
+  
+    <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="Events.html">Events</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <script>
+      const hamburgerIcon = document.getElementById('hamburger-icon');
+      const navLinks = document.querySelector('nav');
+    
+      hamburgerIcon.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+      });
+    </script>
+
+    <section class="events-header">
+      <h2>Upcoming Events:</h2>
+    </section>
+
+    <div class="event-sections-container">
+    <section class="section-events1">
+        <img src="images/events1.png" alt="events image" class="events1-image">
+        <h2>Artisans Art Festival</h2>
+        <p> Artisans Festival
+            Aug 31, Sept 1st - 2nd, 2024
+            Sat.& Sun. 10am-5pm
+            Mon. 10am-4pm
+          Entrance Fee: $10.00</p>
+      
+    </section>
+
+    <section class="section-events2">
+      <img src="images/Events2.png" alt="events image" class="events2-image">
+      <h2>The Alchemy of Gathering</h2>
+      <h3> LIVE MUSIC, LOCAL VENDORS, ART FOR HEALING WORKSHOPS, SOUND HEALING, INTERACTIVE STATIONS, PRESENTATIONS, FOOD TRUCKS</h3>
+      <p> For more information visit:</p>
+      <a href="https://www.changesbyjenna.com/the-alchemy-of-gathering" target="_blank" class="button">Learn More</a>
+    </section>
+
+    <section class="section-events3">
+      <img src="images/events3.png" alt="events image" class="events3-image">
+      <h3> Holiday Season Pass Discount </h3>
+        <h4>$50 Per Person Per Year</h4>
+    
+      <p> A Thoughtful and Healthy Christmas Gift</p>
+        <a href="#Contact" class="button">Contact Us</a>
+    </section>
+    </div>
+
+    <div class="video-container">
+      <h3>Watch the 22nd Annual Art Bloom Festival Video</h3>
+    <iframe width="655" height="368" src="https://www.youtube.com/embed/34PMEv646Ns" title="Kitty Coleman Woodland Gardens" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+        
+    <div class="contact-form-container" id="Contact">
+      <h4>Contact Us for More Information</h4>
+      <form action="#" method="POST" class="contact-form">
+          <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your Name">
+          </div>
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="Your Email">
+          </div>
+          <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+          </div>
+          <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+      </form>
+  </div>
+
+  
+
+    <div class="footer">
+      <div class="footer-content">
+          <div class="text3-container">
+    
+              <img src="images/logo.png" alt="logo" class="footer-logo">
+              <p>This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.</p>
+          </div>
+      </div> 
+          <div class="divider"></div>
+          <div class="footer-section">
+              <h3>Contact</h3>
+              <ul>
+                  <li>Woodlandgardens@hotmail.com</li>
+                  <li>250-338-6901</li>
+                  <li>6183, Whitaker Road, Courtney, BC, V9J 1V7</li>
+                  <li><a href="https://www.facebook.com/KittyColemanWoodlandGardens" target="_blank">Facebook</a></li>
+              
+              </ul>
+             
+            </div>
+            <iframe 
+            width="60" 
+            height="350" 
+             src="https://maps.google.ca/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Kitty+Coleman+Woodland+Gardens,+Courtenay,+BC&amp;aq=1&amp;oq=kitty+col&amp;sll=54.112352,-126.555646&amp;sspn=17.681963,39.506836&amp;ie=UTF8&amp;hq=Kitty+Coleman+Woodland+Gardens,+Courtenay,+BC&amp;ll=49.788294,-125.004626&amp;spn=0.014408,0.032015&amp;t=m&amp;output=embed&amp;iwloc=near">
+            </iframe>
+            
+            <div class="divider2"></div>
+            <div class="footer-bottom">
+              <div class="Facebook">
+                </div>
+          
+          </div>
+    
+          <div class="copyright">
+    <p> &copy; Copyright 2005- 2024 | Bryan Zimmerman - Kitty Coleman Woodland Gardens.
+      All Rights Reserved.</p>
+          </div>
+      </div>
+      </body>
+    </html>
+              
